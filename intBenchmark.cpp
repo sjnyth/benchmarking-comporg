@@ -17,3 +17,7 @@ int main(){
     for (long i = 0; i < 2e9; i++){
         operationResult = a / b;
     }
+    double elapsedTimeInSeconds = (clock() - t) / (CLOCKS_PER_SEC * 1.0);
+    std::cout << "Int Operations take ~ " << elapsedTimeInSeconds << "s\n";
+    return 0;
+}
