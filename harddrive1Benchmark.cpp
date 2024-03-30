@@ -22,3 +22,8 @@ int main(){
         char array[100];
         fread(array, 1, 100, p2);
     }
+    fclose(p2);
+    double time = (clock() - startTime) / (CLOCKS_PER_SEC * 1.0); 
+    std::cout << "Drive Operations(100 Bytes Each) take ~ " << time << "s\n";
+    return 0;
+}
