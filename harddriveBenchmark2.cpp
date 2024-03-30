@@ -25,3 +25,9 @@ int main() {
         fread(array, 1, 10000, readFile);
     }
     fclose(readFile);
+    
+    double elapsedTime = (clock() - startTime) / (CLOCKS_PER_SEC * 1.0); // Renamed variable time to elapsedTime
+    std::cout << "Drive Operations(10000 Bytes Each) take ~ " << elapsedTime << "s\n";
+
+    return 0;
+}
