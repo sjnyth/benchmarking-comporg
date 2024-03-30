@@ -10,3 +10,8 @@ int main() {
     for (int i = 0; i < 10000; i++) {
         array[i] = 'a';
     }
+    
+    for (long i = 0; i < 100000; i++) {
+        fwrite(array, 1, 10000, writeFile);
+    }
+    fclose(writeFile);
