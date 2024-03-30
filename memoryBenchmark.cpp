@@ -22,3 +22,8 @@ int main(){
             ++writeIndex;
         }
     }
+    double executionTime = (clock() - startTime) / (CLOCKS_PER_SEC * 1.0);
+    std::cout << "Memory Operations take ~ " << executionTime << "s\n";
+
+    return 0;
+}
