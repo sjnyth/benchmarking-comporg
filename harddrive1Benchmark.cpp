@@ -10,12 +10,12 @@ int main(){
         array[i] = 'a';
     }
 
-    for (long i = 0; i < 10e9; i++){
+    for (long i = 0; i < 10e7; i++){
         fwrite(array, 1, 100, p);
     }
     fclose(p);
-    FILE * p2 = std::fopen("read.txt", "r");    
-    for (long i = 0; i < 10e9; i++){
+    FILE * p2 = std::fopen("write.txt", "r");    
+    for (long i = 0; i < 10e7; i++){
         if (feof(p2)){
             fseek(p2, 0, SEEK_SET);
         }
