@@ -13,3 +13,12 @@ int main(){
             ++readIndex;
         }
     }
+    // Perform memory write operations
+    for (int i = 0; i < 5e9; i++) {
+        int writeList[100];
+        int writeIndex = 0;
+        while (writeIndex < 100) {
+            writeList[writeIndex] = 100;
+            ++writeIndex;
+        }
+    }
