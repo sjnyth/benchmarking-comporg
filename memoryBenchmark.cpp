@@ -1,10 +1,9 @@
 #include <time.h>
 #include <iostream>
 int main(){
-    clock_t t;
-    startTime = clock();
+    clock_t startTime = clock();
     // Perform memory read operations
-    for (int i = 0; i < 5e9; i++){
+    for (int i = 0; i < 5e7; i++){
         int readList[100]{0};
         int readValue;
         int readIndex = 0;
@@ -14,7 +13,8 @@ int main(){
         }
     }
     // Perform memory write operations
-    for (int i = 0; i < 5e9; i++) {
+    // int size is 4 bytes in mac
+    for (int i = 0; i < 5e7; i++) {
         int writeList[100];
         int writeIndex = 0;
         while (writeIndex < 100) {
